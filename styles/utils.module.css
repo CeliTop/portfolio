@@ -4,3 +4,161 @@
   border-radius: 20px;
   padding: 2rem;
 }
+
+.dark {
+  color: var(--primary);
+  background-color: var(--primary-background);
+}
+
+.tag {
+  color: white;
+  background-color: rgb(192, 192, 192);
+  border: solid 1px var(--primary-background);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.125rem;
+  display: inline-block;
+  transition: all 0.1s;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tag.orange {
+  background-color: rgb(255, 149, 79);
+}
+
+.tag.red {
+  background-color: rgb(255, 79, 79);
+}
+
+.tag.yellow {
+  background-color: rgb(255, 229, 79);
+}
+
+.tag.blue {
+  background-color: rgb(79, 111, 255);
+}
+
+.tag.cyan {
+  background-color: rgb(79, 255, 255);
+}
+
+.tag.black {
+  background-color: rgb(41, 41, 41);
+}
+
+.tag.darkBlue {
+  background-color: rgb(0, 21, 116);
+}
+
+/*  */
+
+.tag.orange:hover {
+  color: rgb(255, 149, 79);
+}
+
+.tag.red:hover {
+  color: rgb(255, 79, 79);
+}
+
+.tag.yellow:hover {
+  color: rgb(255, 229, 79);
+}
+
+.tag.blue:hover {
+  color: rgb(79, 111, 255);
+}
+
+.tag.cyan:hover {
+  color: rgb(79, 255, 255);
+}
+
+.tag.black:hover {
+  color: rgb(255, 255, 255);
+}
+
+.tag.darkBlue:hover {
+  color: rgb(0, 21, 116);
+}
+
+.tag:hover {
+  background-color: rgba(10, 10, 40, 0.9);
+}
+
+.arrowCircle {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 2rem;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
