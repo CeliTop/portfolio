@@ -17,6 +17,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/debethune-celian/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -27,6 +28,7 @@ export default function Contact() {
               href="https://github.com/CeliTop"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Github"
             >
               <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
             </a>

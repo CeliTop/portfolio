@@ -116,7 +116,7 @@ function PresentationVideo() {
   return (
     <div className={styles.section}>
       <p className={styles.sectionTitle}>Presentation Video</p>
-      <YoutubePlayer link="https://www.youtube.com/embed/YVIdXFci114" />
+      <YoutubePlayer link="https://www.youtube-nocookie.com/embed/YVIdXFci114" />
     </div>
   );
 }

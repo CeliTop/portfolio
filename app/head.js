@@ -7,6 +7,8 @@ export default function Head() {
         name="viewport"
         content="width=device-width,initial-scale=1.0"
       ></meta>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+      <meta name="description" content="Célian DEBÉTHUNE's website - Home." />
     </head>
   );
 }

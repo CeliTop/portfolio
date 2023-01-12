@@ -23,13 +23,16 @@ function Skills() {
             <li key={id}>
               <div>
                 <p className={styles.skillCategory}>{category}</p>
-                {skills[category].map((skill, skillId) => (
-                  <Tag
-                    text={skill.skill}
-                    colorClass={skill.color}
-                    key={`${id}${skillId}`}
-                  />
-                ))}
+                <ul>
+                  {skills[category].map((skill, skillId) => (
+                    <Tag
+                      text={skill.skill}
+                      colorClass={skill.color}
+                      keyProps={`${id}${skillId}`}
+                      key={`${id}${skillId}`}
+                    />
+                  ))}
+                </ul>
               </div>
             </li>
           ))}
@@ -47,7 +50,12 @@ function Interests() {
         <p className={styles.sectionSubtitle}>What I like to do</p>
         <ul>
           {interests.map((interest, id) => (
-            <Tag text={interest.text} colorClass={interest.color} key={id} />
+            <Tag
+              text={interest.text}
+              colorClass={interest.color}
+              keyProps={id}
+              key={id}
+            />
           ))}
         </ul>
       </Card>

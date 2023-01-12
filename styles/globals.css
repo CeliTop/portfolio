@@ -45,7 +45,7 @@ button {
   background-color: var(--secondary-background);
   border: solid 1px var(--secondary-background);
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 700;
   font-family: inherit;
   transition: all 0.1s;
 }

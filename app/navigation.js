@@ -14,7 +14,7 @@ import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navigation() {
   const [menuActive, setMenuActive] = useState(false);
-  const [profileActive, setProfileActive] = useState(window.scrollY > 400);
+  const [profileActive, setProfileActive] = useState(false);
   const pathname = usePathname();
 
   const toggleMenu = () => setMenuActive((active) => !active);
@@ -29,7 +29,7 @@ export default function Navigation() {
 
   return (
     <header className={styles.header}>
-      <Link href="/">
+      <Link href="/" aria-label="Home">
         <div
           className={`${styles.profile} ${
             profileActive ? styles.profileActive : ""

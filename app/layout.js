@@ -16,7 +16,7 @@ config.autoAddCss = false;
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en">
       <body className={inter.className}>
         <Navigation />
         {children}
