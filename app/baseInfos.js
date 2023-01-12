@@ -16,7 +16,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function BaseInfos() {
   return (
-    <div className={styles.presentation}>
+    <section className={styles.presentation}>
       <div className={styles.left}>
         <h3 className={styles.greetings}>{"Hello there,"}</h3>
         <h1 className={styles.title}>{"I'm Célian DEBÉTHUNE"}</h1>
@@ -37,6 +37,7 @@ export default function BaseInfos() {
               src={profilePic}
               alt="Picture of Célian DEBETHUNE"
               priority
+              quality={100}
             />
             <h2 className={styles.name}>Célian DEBÉTHUNE</h2>
             <div className={styles.info}>
@@ -94,6 +95,6 @@ export default function BaseInfos() {
           </div>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }

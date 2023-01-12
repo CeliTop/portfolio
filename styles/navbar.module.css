@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  font-size: 1.0625rem;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-background);
+  height: 100%;
+  transition: transform 0.3s;
+  transform: translateY(-125%);
+}
+
+.profileContainer {
+  padding: 0.5rem;
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.profileActive {
+  transform: translateY(0);
+}
+
+.profilePicture {
+  width: 50px;
+  height: auto;
+  border-radius: 9999px;
+}
+
+.links {
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-background);
+}
+
+.link {
+  transition: color 0.1s;
+  text-align: center;
+}
+
+.link:hover {
+  color: var(--secondary);
+}
+
+.link > a {
+  text-decoration: none;
+}
+
+.active {
+  color: var(--secondary);
+}
+
+.active > a {
+  text-decoration: underline;
+}
+
+.menuButton {
+  margin-top: 5px;
+  padding: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  border-radius: 9999px;
+  margin-right: 10px;
+}
+
+.arrow {
+  margin: 1rem 0 0.5rem 0;
+  padding: 0;
+  color: var(--primary);
+  background: none;
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    visibility: hidden;
+  }
+
+  .navigation {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -305px;
+  }
+
+  .navigation > .menuButton {
+    margin-top: 1rem;
+  }
+
+  .links {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    border-radius: 0 0 0 10px;
+    padding: 1rem;
+  }
+
+  .linksActive {
+    transform: translateX(-305px);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    background-color: var(--primary-background);
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+  }
+
+  .menuButton {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .navigation {
+    padding: 0 5%;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .header {
+    font-size: 0.75rem;
+  }
+}

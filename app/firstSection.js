@@ -4,7 +4,7 @@ import YoutubePlayer from "../components/youtubePlayer";
 
 export default function FirstSection() {
   return (
-    <div className={styles.lightSection} id="firstSection">
+    <section className={styles.lightSection}>
       <div className={`${styles.section} ${styles.firstSection}`}>
         <WhoAmI />
         <LikeWebsite />
@@ -13,7 +13,7 @@ export default function FirstSection() {
       <div className={`${styles.videoSection}`}>
         <PresentationVideo />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -105,7 +105,7 @@ function LikeWebsite() {
       <p className={styles.sectionTitle}>Do you like this website ?</p>
       <p className={styles.description}>
         {
-          "If you like the design of this page, or want to know how it's made, youcan go to the Github page for this project. You can even take inspiration from it and fork the repository, but please give me the credits by linking to my site."
+          "If you like the design of this page, or want to know how it's made, you can go to the Github page for this project. You can even take inspiration from it and fork the repository, but please give me proper credit by linking back to my website."
         }
       </p>
     </div>

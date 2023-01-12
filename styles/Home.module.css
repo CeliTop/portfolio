@@ -87,8 +87,7 @@
 .arrowSection {
   max-height: 0;
   visibility: hidden;
-  display: flex;
-  justify-content: center;
+  margin-left: 10%;
   cursor: pointer;
   transform: translateY(-12rem);
 }
@@ -215,12 +214,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 80%;
+    margin-bottom: 0;
   }
 
   .presentation .right {
-    margin: none;
+    margin: 2rem;
     margin-left: auto;
   }
 
@@ -361,5 +361,11 @@
 
   .title {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .presentation {
+    margin-top: 70px;
   }
 }

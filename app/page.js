@@ -10,19 +10,19 @@ export default function Home() {
   return (
     <>
       <BaseInfos />
-      <div className={styles.arrowSection}>
+      <div className={styles.arrowSection} id="firstSection">
         <a href="#firstSection">
           <Arrow />
         </a>
       </div>
       <FirstSection />
       <SecondSection />
-      <div className={styles.bottom}>
+      <footer className={styles.bottom}>
         <div className={`${styles.section} ${styles.contactSection}`}>
           <Contact />
         </div>
         <p>Designed and built by Célian DEBÉTHUNE</p>
-      </div>
+      </footer>
     </>
   );
 }

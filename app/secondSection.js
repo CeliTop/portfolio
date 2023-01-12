@@ -4,11 +4,11 @@ import Tag from "../components/tag";
 
 export default function SecondSection() {
   return (
-    <div className={`${styles.section} ${styles.skillsInterests}`}>
+    <section className={`${styles.section} ${styles.skillsInterests}`}>
       <Skills />
       <Interests />
       <SeeMore />
-    </div>
+    </section>
   );
 }
 

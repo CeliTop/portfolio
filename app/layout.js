@@ -1,5 +1,6 @@
 //Global styles
 import "../styles/globals.css";
+import Navigation from "./navigation";
 
 // Fonts
 import { Inter } from "@next/font/google";
@@ -16,7 +17,10 @@ config.autoAddCss = false;
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
