@@ -162,3 +162,45 @@
     transform: translateY(-15px);
   }
 }
+
+.errorPage {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.errorNumber {
+  font-size: 12rem;
+}
+
+.errorMessage {
+  font-size: 2rem;
+}
+
+.goTo {
+  margin-top: 2rem;
+}
+
+.goTo > a {
+  display: block;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .errorPage {
+    width: 80%;
+    margin: 20% auto 0 auto;
+  }
+
+  .errorNumber {
+    font-size: 8rem;
+  }
+
+  .errorMessage {
+    font-size: 1rem;
+  }
+
+  .goTo {
+    margin-top: 0.625rem;
+    font-size: 0.75rem;
+  }
+}
