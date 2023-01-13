@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import DownloadCV from "../components/downloadCV";
 
 export default function Contact() {
   return (
@@ -32,11 +33,7 @@ export default function Contact() {
             >
               <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
             </a>
-            <button className={`${styles.download} ${styles.downloadDark}`}>
-              <a href="/files/CV DEBETHUNE Célian.pdf" download>
-                Download my CV
-              </a>
-            </button>
+            <DownloadCV dark />
           </div>
         </div>
         <div className={styles.right}>

@@ -1,0 +1,80 @@
+.page {
+  margin-top: 10rem;
+}
+
+.titleCard {
+  width: 50%;
+  margin: 0 auto 6rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: justify;
+}
+
+.interviewSection {
+  padding: 4rem;
+  color: var(--secondary);
+  background-color: var(--secondary-background);
+}
+
+.interviewTop {
+  margin-bottom: 2rem;
+}
+
+.interviewTitle {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.interview {
+  margin: auto;
+  text-align: justify;
+}
+
+.interview .text {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text p {
+  margin-bottom: 1rem;
+}
+
+.message {
+  grid-column: 1;
+}
+
+.interviewImage {
+  display: block;
+  grid-column: 2;
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.thanks {
+  grid-column: 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .interviewImage {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .interview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1500px;
+  }
+
+  .interview .text {
+    height: 100%;
+  }
+}

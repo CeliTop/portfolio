@@ -10,6 +10,28 @@
   background-color: var(--primary-background);
 }
 
+.download {
+  margin-bottom: 1rem;
+}
+
+.download > a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
+.downloadDark {
+  color: var(--primary);
+  background-color: var(--primary-background);
+  border-color: var(--primary-background);
+}
+
+.downloadDark:hover {
+  color: var(--secondary);
+  background-color: var(--secondary-background);
+  border-color: var(--primary-background);
+}
+
 .tag {
   color: white;
   background-color: rgb(192, 192, 192);

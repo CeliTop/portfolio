@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import DownloadCV from "../components/downloadCV";
 
 export default function BaseInfos() {
   return (
@@ -23,11 +24,7 @@ export default function BaseInfos() {
         <h2 className={styles.student}>
           {"A french computer engineering student"}
         </h2>
-        <button className={styles.download}>
-          <a href="/files/CV DEBETHUNE Célian.pdf" download>
-            Download my CV
-          </a>
-        </button>
+        <DownloadCV />
       </div>
       <div className={styles.right}>
         <Card>

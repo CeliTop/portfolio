@@ -32,7 +32,7 @@ export default function Navigation() {
       <Link href="/" aria-label="Home">
         <div
           className={`${styles.profile} ${
-            profileActive ? styles.profileActive : ""
+            profileActive || pathname != "/" ? styles.profileActive : ""
           }`}
         >
           <div className={styles.profileContainer}>
