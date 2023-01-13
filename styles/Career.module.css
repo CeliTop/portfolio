@@ -3,7 +3,7 @@
 }
 
 .titleCard {
-  width: 50%;
+  width: 80%;
   margin: 0 auto 6rem auto;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
   padding: 4rem;
   color: var(--secondary);
   background-color: var(--secondary-background);
+  text-align: justify;
 }
 
 .interviewTop {
@@ -23,6 +24,7 @@
 }
 
 .interviewTitle {
+  margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -61,6 +63,32 @@
   grid-column: 3;
 }
 
+@media screen and (max-width: 800px) {
+  .page {
+    margin-top: 4rem;
+  }
+
+  .titleCard {
+    padding: 2rem 1rem;
+  }
+
+  .titleCard > h1 {
+    font-size: 2rem;
+  }
+
+  .interviewSection {
+    padding: 2rem 1rem;
+  }
+
+  .interviewSection > :nth-child(2) {
+    padding: 1rem 0.5rem;
+  }
+
+  .interview .text {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .interviewImage {
     margin: 1rem auto;
@@ -68,6 +96,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .titleCard {
+    width: 50%;
+  }
+
   .interview {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -65,8 +65,9 @@ export default function Navigation() {
                 pathname == link.route ? styles.active : ""
               }`}
               key={id}
+              onClick={toggleMenu}
             >
-              <Link href={link.route}>{link.name}</Link>
+              <Link href={link.route}>{link.name} </Link>
             </li>
           ))}
         </ul>

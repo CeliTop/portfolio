@@ -15,7 +15,7 @@ export default function Career() {
         </p>
         <DownloadCV dark />
       </Card>
-      <div className={styles.interviewSection}>
+      <main className={styles.interviewSection}>
         <div className={styles.interviewTop}>
           <h3 className={styles.interviewTitle}>Job Interview</h3>
           <p className={styles.interviewSubtitle}>
@@ -33,7 +33,7 @@ export default function Career() {
           />
           <Thanks />
         </Card>
-      </div>
+      </main>
     </div>
   );
 }

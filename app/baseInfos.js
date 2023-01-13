@@ -34,7 +34,6 @@ export default function BaseInfos() {
               src={profilePic}
               alt="Picture of Célian DEBETHUNE"
               priority
-              quality={100}
             />
             <h2 className={styles.name}>Célian DEBÉTHUNE</h2>
             <div className={styles.info}>

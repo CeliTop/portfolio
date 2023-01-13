@@ -10,10 +10,6 @@
   background-color: var(--primary-background);
 }
 
-.download {
-  margin-bottom: 1rem;
-}
-
 .download > a {
   text-decoration: none;
   display: block;
@@ -225,4 +221,42 @@
     margin-top: 0.625rem;
     font-size: 0.75rem;
   }
+}
+
+.courseCard {
+  padding: 0;
+  overflow: hidden;
+  box-shadow: -5px 10px 10px 0 black;
+  transition: transform 0.2s, filter 0.2s, box-shadow 0.1s;
+  filter: opacity(50%);
+  border: 1px solid white;
+}
+
+.courseCard:hover {
+  transform: scale(1.1);
+  filter: opacity(100%);
+  box-shadow: 0 0 0 0 black;
+}
+
+.courseTop {
+  background-color: var(--secondary-background);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.courseImage {
+  display: block;
+  margin: auto;
+  transform: scale(0.8);
+  transition: transform 0.2s;
+}
+
+.courseCard:hover .courseImage {
+  transform: scale(1);
+}
+
+.courseName {
+  text-align: center;
+  margin-bottom: 2rem;
 }
