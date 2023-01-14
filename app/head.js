@@ -1,6 +1,6 @@
 export default function Head() {
   return (
-    <head>
+    <>
       <title>Célian DEBÉTHUNE | Computer engineering Student</title>
       <link rel="icon" href="/favicon.ico" />
       <meta
@@ -9,6 +9,6 @@ export default function Head() {
       ></meta>
       <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
       <meta name="description" content="Célian DEBÉTHUNE's website - Home." />
-    </head>
+    </>
   );
 }
