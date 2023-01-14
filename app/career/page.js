@@ -1,6 +1,7 @@
 import Card from "../../components/card";
-import DownloadCV from "../../components/downloadCV";
+import Download from "../../components/download";
 import styles from "../../styles/Career.module.css";
+import utils from "../../styles/utils.module.css";
 import Image from "next/image";
 import interviewImage from "/public/images/interview.png";
 
@@ -13,26 +14,48 @@ export default function Career() {
           ENSEEIHT supports students in their professional career and encourages
           them to develop their network of professionals
         </p>
-        <DownloadCV dark />
+        <Download
+          dark
+          text="Download my CV"
+          filePath="/files/CV DEBETHUNE Célian.pdf"
+        />
       </Card>
-      <main className={styles.interviewSection}>
-        <div className={styles.interviewTop}>
-          <h3 className={styles.interviewTitle}>Job Interview</h3>
-          <p className={styles.interviewSubtitle}>
-            In order to better understand the professional world and better
-            understand the areas that interest me, I conducted an interview with
-            a professional.
-          </p>
+      <main>
+        <div className={styles.interviewSection}>
+          <div className={styles.interviewTop}>
+            <h3 className={styles.interviewTitle}>Job Interview</h3>
+            <p className={styles.interviewSubtitle}>
+              In order to better understand the professional world and better
+              understand the areas that interest me, I conducted an interview
+              with a professional.
+            </p>
+          </div>
+          <Card dark className={styles.interview}>
+            <Message />
+            <Image
+              className={styles.interviewImage}
+              src={interviewImage}
+              alt="report of the interview"
+            />
+            <Thanks />
+          </Card>
         </div>
-        <Card dark className={styles.interview}>
-          <Message />
-          <Image
-            className={styles.interviewImage}
-            src={interviewImage}
-            alt="report of the interview"
-          />
-          <Thanks />
-        </Card>
+        <div className={styles.internship}>
+          <div className={utils.sectionTop}>
+            <h1 className={utils.sectionTitle}>Internship</h1>
+            <p>
+              After each year of study of my engineering cycle, an internship in
+              a company must be carried out. Below are my reports of the
+              different internships I have done.
+            </p>
+          </div>
+          <div className={styles.reports}>
+            <Download
+              text="1st year report"
+              filePath="/files/internshipReport1A.pdf"
+            />
+          </div>
+        </div>
       </main>
     </div>
   );

@@ -1,10 +1,10 @@
 import utils from "../styles/utils.module.css";
 
-export default function DownloadCV({ dark }) {
+export default function Download({ dark, filePath, text }) {
   return (
     <button className={`${utils.download} ${dark ? utils.downloadDark : ""}`}>
-      <a href="/files/CV DEBETHUNE Célian.pdf" download>
-        Download my CV
+      <a href={filePath} download>
+        {text}
       </a>
     </button>
   );
