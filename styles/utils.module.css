@@ -303,3 +303,16 @@
     font-size: 2rem;
   }
 }
+
+.cardList {
+  margin-bottom: 4rem;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cardList > * {
+  width: 300px;
+}
