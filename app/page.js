@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <BaseInfos />
       <div className={styles.arrowSection} id="scrollTo">
-        <a href="#scrollTo">
+        <a href="#scrollTo" aria-label="scroll button">
           <Arrow />
         </a>
       </div>
