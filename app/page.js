@@ -6,6 +6,14 @@ import Contact from "./contact";
 
 import styles from "../styles/Home.module.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+
 export default function Home() {
   return (
     <>
@@ -21,7 +29,14 @@ export default function Home() {
         <div className={`${styles.section} ${styles.contactSection}`}>
           <Contact />
         </div>
-        <p>Designed and built by Célian DEBÉTHUNE</p>
+        <p>
+          Designed and built by Célian DEBÉTHUNE - Technologies used
+          <FontAwesomeIcon icon={faHtml5} className={styles.bottomIcons} />
+          <FontAwesomeIcon icon={faCss3Alt} className={styles.bottomIcons} />
+          <FontAwesomeIcon icon={faJs} className={styles.bottomIcons} />
+          <FontAwesomeIcon icon={faReact} className={styles.bottomIcons} />
+          Next.js 13
+        </p>
       </footer>
     </>
   );
