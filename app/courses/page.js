@@ -1,12 +1,13 @@
 import CourseCard from "../../components/courseCard";
 import styles from "../../styles/Courses.module.css";
+import utils from "../../styles/utils.module.css";
 
 export default function Courses() {
   return (
-    <div className={styles.page}>
-      <div className={styles.pageTop}>
-        <h1 className={styles.pageTitle}>Engineering Courses</h1>
-        <p className={styles.pageDescription}>
+    <div className={utils.page}>
+      <div className={utils.sectionTop}>
+        <h1 className={utils.sectionTitle}>Engineering Courses</h1>
+        <p>
           Here are some of the courses that I took at my school in France or at
           the University of Stavanger in Norway during my semester abroad.
         </p>

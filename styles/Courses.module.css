@@ -1,17 +1,3 @@
-.page {
-  margin-top: 6rem;
-  text-align: justify;
-}
-
-.pageTop {
-  padding: 0 4rem;
-  margin-bottom: 2rem;
-}
-
-.pageTitle {
-  margin-bottom: 1rem;
-}
-
 .courseList {
   margin-bottom: 2rem;
   padding: 0 5%;
@@ -19,10 +5,4 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-}
-
-@media screen and (max-width: 800px) {
-  .pageTitle {
-    font-size: 2rem;
-  }
 }

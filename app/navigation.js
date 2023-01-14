@@ -19,13 +19,14 @@ export default function Navigation() {
 
   const toggleMenu = () => setMenuActive((active) => !active);
 
-  useEffect(
-    () =>
-      window.addEventListener("scroll", function () {
-        setProfileActive(window.scrollY > 400);
-      }),
-    []
-  );
+  useEffect(() => {
+    function handleScroll() {
+      setProfileActive(window.scrollY > 400);
+    }
+    document.addEventListener("scroll", handleScroll);
+
+    return () => document.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className={styles.header}>
@@ -80,7 +81,7 @@ const links = [
   { name: "Home", route: "/" },
   { name: "Career Development", route: "/career" },
   { name: "Engineering Courses", route: "/courses" },
-  { name: "International Mobility", route: "/mobility" },
+  { name: "International Mobility", route: "/international" },
   { name: "Sustainability | Civic Engagement", route: "/sustainability" },
   { name: "Activities", route: "/activities" },
 ];
