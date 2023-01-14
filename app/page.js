@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <BaseInfos />
-      <div className={styles.arrowSection} id="firstSection">
-        <a href="#firstSection">
+      <div className={styles.arrowSection} id="scrollTo">
+        <a href="#scrollTo">
           <Arrow />
         </a>
       </div>

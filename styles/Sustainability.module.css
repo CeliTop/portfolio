@@ -1,0 +1,77 @@
+.actionList {
+  margin-bottom: 4rem;
+  padding: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.actionList > * {
+  width: 300px;
+}
+
+.learnTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.freskContainer {
+  padding: 0 3%;
+  margin-bottom: 4rem;
+}
+
+.freskResult {
+  margin: 2rem auto;
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.freskImage {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+}
+
+.freskDesc {
+  flex: 1;
+}
+
+.freskDesc > * {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.projectContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 5%;
+  margin-bottom: 2rem;
+}
+
+.projectImage {
+  max-width: 40rem;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .freskResult {
+    flex-direction: column;
+  }
+
+  .projectContent {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+}

@@ -124,12 +124,6 @@
   font-weight: 300;
 }
 
-.video {
-  max-width: 90%;
-  display: block;
-  margin: auto;
-}
-
 :is(.skills, .interests, .contactMe) .sectionSubtitle {
   margin-bottom: 0.375rem;
 }

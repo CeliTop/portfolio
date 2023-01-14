@@ -30,6 +30,13 @@
   border-color: var(--primary-background);
 }
 
+/* video */
+.video {
+  max-width: 90%;
+  display: block;
+  margin: auto;
+}
+
 /* Tags */
 .tag {
   color: white;
@@ -227,42 +234,49 @@
 }
 
 /* Course card */
-.courseCard {
+.imageCard {
   padding: 0;
   overflow: hidden;
   box-shadow: -5px 10px 10px 0 black;
   transition: transform 0.2s, filter 0.2s, box-shadow 0.1s;
   filter: opacity(50%);
   border: 1px solid white;
+  width: 270px;
 }
 
-.courseCard:hover {
+.imageCard:hover {
   transform: scale(1.1);
   filter: opacity(100%);
   box-shadow: 0 0 0 0 black;
 }
 
-.courseTop {
+.imageTop {
   background-color: var(--secondary-background);
   padding: 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
-.courseImage {
+.cardImage {
   display: block;
   margin: auto;
   transform: scale(0.8);
   transition: transform 0.2s;
+  width: 100%;
+  height: auto;
 }
 
-.courseCard:hover .courseImage {
+.imageCard:hover .cardImage {
   transform: scale(1);
 }
 
-.courseName {
+.cardTitle {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.cardDescription {
+  padding: 1rem;
 }
 
 /* Pages common */
@@ -277,6 +291,7 @@
 }
 
 .sectionTitle {
+  text-align: left;
   margin-bottom: 1rem;
 }
 

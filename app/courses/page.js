@@ -1,4 +1,4 @@
-import CourseCard from "../../components/courseCard";
+import ImageCard from "../../components/imageCard";
 import styles from "../../styles/Courses.module.css";
 import utils from "../../styles/utils.module.css";
 
@@ -14,9 +14,9 @@ export default function Courses() {
       </div>
       <main className={styles.courseList}>
         {courses.map((course, id) => (
-          <CourseCard
+          <ImageCard
             key={id}
-            courseName={course.name}
+            title={course.name}
             imagePath={`/images/courses/${course.imagePath}`}
           />
         ))}

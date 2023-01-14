@@ -105,8 +105,17 @@ function LikeWebsite() {
       <p className={styles.sectionTitle}>Do you like this website ?</p>
       <p className={styles.description}>
         {
-          "If you like the design of this page, or want to know how it's made, you can go to the Github page for this project. You can even take inspiration from it and fork the repository, but please give me proper credit by linking back to my website."
+          "If you like the design of this page, or want to know how it's made, you can "
         }
+        <a
+          href="https://github.com/CeliTop/portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          go to the Github page of this project.
+        </a>
+        You can even take inspiration from it and fork the repository, but
+        please give me proper credit by linking back to my website.
       </p>
     </div>
   );

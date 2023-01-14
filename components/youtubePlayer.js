@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import utils from "../styles/utils.module.css";
 
 export default function YoutubePlayer({ link }) {
   return (
@@ -10,7 +10,7 @@ export default function YoutubePlayer({ link }) {
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
-      className={styles.video}
+      className={utils.video}
     ></iframe>
   );
 }

@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/card.js";
 
 import Image from "next/image";
-import profilePic from "../public/images/profile-picture.webp";
+import profilePic from "/public/images/profile-picture.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
