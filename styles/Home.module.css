@@ -10,6 +10,10 @@
   margin-right: 1rem;
 }
 
+.student {
+  margin-bottom: 2rem;
+}
+
 .presentation .right {
   max-width: 24rem;
   margin: auto;
@@ -206,7 +210,6 @@
 
   .student {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
 
   .greetings {
