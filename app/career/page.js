@@ -23,7 +23,7 @@ export default function Career() {
       <main>
         <div className={styles.interviewSection}>
           <div className={styles.interviewTop}>
-            <h3 className={styles.interviewTitle}>Job Interview</h3>
+            <h2 className={styles.interviewTitle}>Job Interview</h2>
             <p className={styles.interviewSubtitle}>
               In order to better understand the professional world and better
               understand the areas that interest me, I conducted an interview

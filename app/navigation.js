@@ -42,6 +42,8 @@ export default function Navigation() {
               src={profilePic}
               alt="Picture of Célian DEBETHUNE"
               priority={true}
+              width={100}
+              height={100}
             />
             <p className={styles.name}>Célian DEBÉTHUNE</p>
           </div>
