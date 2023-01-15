@@ -1,6 +1,6 @@
 ## Hello there !
 
-This is the github page of my portfolio available on [Vercel]("") (not yet).
+This is the github page of my portfolio available on [Vercel]("https://celiandebethune.vercel.app").
 
 ## Technology used
 

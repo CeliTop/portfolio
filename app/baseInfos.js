@@ -36,7 +36,7 @@ export default function BaseInfos() {
               className={styles.profilePicture}
               src={profilePic}
               alt="Picture of Célian DEBETHUNE"
-              priority
+              priority={true}
             />
             <h2 className={styles.name}>Célian DEBÉTHUNE</h2>
             <div className={styles.info}>

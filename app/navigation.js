@@ -23,7 +23,7 @@ export default function Navigation() {
     function handleScroll() {
       setProfileActive(window.scrollY > 400);
     }
-    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
@@ -41,6 +41,7 @@ export default function Navigation() {
               className={styles.profilePicture}
               src={profilePic}
               alt="Picture of Célian DEBETHUNE"
+              priority={true}
             />
             <p className={styles.name}>Célian DEBÉTHUNE</p>
           </div>
