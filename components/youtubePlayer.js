@@ -6,6 +6,7 @@ export default function YoutubePlayer({ link }) {
       width="560"
       height="315"
       src={link}
+      loading="lazy"
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
