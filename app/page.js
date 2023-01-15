@@ -18,9 +18,10 @@ export default function Home() {
   return (
     <>
       <BaseInfos />
-      <div className={styles.arrowSection} id="scrollTo">
-        <a href="#scrollTo" aria-label="scroll button">
+      <div className={styles.arrowSection} id="seeMore">
+        <a href="#seeMore" aria-label="scroll button" className={styles.scroll}>
           <Arrow />
+          <p>Click to see more !</p>
         </a>
       </div>
       <FirstSection />

@@ -64,10 +64,23 @@
 
 .arrowSection {
   max-height: 0;
+  display: inline-block;
   visibility: hidden;
-  margin-left: 10%;
+  margin-left: 5%;
   cursor: pointer;
   transform: translateY(-12rem);
+}
+
+.scroll {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.scroll:hover {
+  text-decoration: underline;
 }
 
 .section {
@@ -193,6 +206,10 @@
     min-height: 100vh;
     width: 80%;
     margin-bottom: 0;
+  }
+
+  .presentation .left {
+    margin-bottom: 10rem;
   }
 
   .presentation .right {
