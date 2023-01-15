@@ -1,3 +1,3 @@
 Bug when using css modules.
 When using css modules with the app folder (in beta at this time), next/link does not scroll to top anymore when changing page.
-tempary-fix: window.scrollTo(0,0) event listener
+tempary-fix: window.scrollTo(0,0) onClick event listener
