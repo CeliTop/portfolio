@@ -3,7 +3,10 @@ export default function Head() {
     <>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
-      <meta name="description" content="Célian DEBÉTHUNE's website - Home." />
+      <meta
+        name="google-site-verification"
+        content="GWTGv51dnLx7HmmUFyh6YwgLtizZtODYtKw5nrGU-Cs"
+      />
 
       <title>Célian DEBÉTHUNE | Computer engineering Student</title>
       <meta
