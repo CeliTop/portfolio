@@ -65,9 +65,7 @@ export default function Sustainability() {
         </h1>
       </div>
       <div className={styles.projectContent}>
-        <div>
-          <YoutubePlayer link="https://www.youtube-nocookie.com/embed/C5VLR3IdqC8" />
-        </div>
+        <YoutubePlayer id="C5VLR3IdqC8" />
         <Image
           className={styles.projectImage}
           src={project}

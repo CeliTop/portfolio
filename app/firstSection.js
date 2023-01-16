@@ -112,7 +112,7 @@ function LikeWebsite() {
           target="_blank"
           rel="noreferrer"
         >
-          go to the Github page of this project.
+          {"go to the Github page of this project. "}
         </a>
         You can even take inspiration from it and fork the repository, but
         please give me proper credit by linking back to my website.
@@ -125,7 +125,7 @@ function PresentationVideo() {
   return (
     <div className={styles.section}>
       <p className={styles.sectionTitle}>Presentation Video</p>
-      <YoutubePlayer link="https://www.youtube-nocookie.com/embed/YVIdXFci114" />
+      <YoutubePlayer id="YVIdXFci114" />
     </div>
   );
 }

@@ -30,13 +30,6 @@
   border-color: var(--primary-background);
 }
 
-/* video */
-.video {
-  max-width: 90%;
-  display: block;
-  margin: auto;
-}
-
 /* Tags */
 .tag {
   color: white;
