@@ -107,10 +107,6 @@
   margin-bottom: 2rem;
 }
 
-:is(.likeWebsite, .seeMore, .studies) .sectionTitle {
-  margin-top: 2rem;
-}
-
 :is(.likeWebsite, .seeMore) .description {
   padding: 2rem;
   font-size: 1.5rem;
@@ -125,6 +121,12 @@
 
 .sectionSubtitle {
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.whoAmI,
+.likeWebsite,
+.studies {
   margin-bottom: 2rem;
 }
 
@@ -145,7 +147,9 @@
   margin-bottom: 0.375rem;
 }
 
-.skills {
+.skills,
+.interests,
+.seeMore {
   margin-bottom: 2rem;
 }
 
@@ -154,11 +158,43 @@
   font-weight: 700;
 }
 
+.emailSection {
+  width: 90%;
+  max-width: 800px;
+  margin: 3rem auto 0 auto;
+}
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sendTitle {
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  margin-top: 0.25rem;
+  color: red;
+}
+
+input[type="submit"].submitted {
+  background-color: rgb(94, 196, 35);
+  border-color: var(--secondary-background);
+  color: white;
+}
+
 .bottom {
   position: relative;
   color: var(--secondary);
   background-color: var(--secondary-background);
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 .bottom > p {
@@ -244,7 +280,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "whoAmI studies"
-      "likeWebsite studies";
+      "likeWebsite studies"
+      "video video";
     row-gap: 3rem;
     column-gap: 3rem;
   }
@@ -280,6 +317,11 @@
     justify-content: space-between;
   }
 
+  .videoSection {
+    grid-area: video;
+    margin: auto;
+  }
+
   .skillsInterests {
     margin: auto;
     max-width: none;
@@ -287,7 +329,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "skills interests"
-      "skills seeMore";
+      "skills seeMore"
+      "email email";
     row-gap: 3rem;
     column-gap: 3rem;
   }
@@ -321,6 +364,10 @@
     grid-area: seeMore;
     width: 60%;
     min-width: 20rem;
+  }
+
+  .emailSection {
+    grid-area: email;
   }
 
   .contactSection {

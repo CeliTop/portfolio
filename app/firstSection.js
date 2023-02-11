@@ -9,9 +9,9 @@ export default function FirstSection() {
         <WhoAmI />
         <LikeWebsite />
         <Studies />
-      </div>
-      <div className={`${styles.videoSection}`}>
-        <PresentationVideo />
+        <div className={`${styles.videoSection}`}>
+          <PresentationVideo />
+        </div>
       </div>
     </section>
   );

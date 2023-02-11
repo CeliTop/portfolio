@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Card from "../components/card";
 import Tag from "../components/tag";
+import Email from "./email";
 
 export default function SecondSection() {
   return (
@@ -8,6 +9,7 @@ export default function SecondSection() {
       <Skills />
       <Interests />
       <SeeMore />
+      <Email />
     </section>
   );
 }

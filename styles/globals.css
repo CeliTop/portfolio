@@ -61,3 +61,38 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+input[type="submit"] {
+  color: var(--primary);
+  background-color: var(--primary-background);
+  border: solid 1px var(--primary-background);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  transition: all 0.1s;
+}
+
+input[type="submit"]:hover {
+  color: var(--secondary);
+  background-color: var(--secondary-background);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  height: 300px;
+  resize: vertical;
+}
+
+input[type="submit"]:disabled {
+  opacity: 0.2;
+}
