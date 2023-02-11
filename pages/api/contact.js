@@ -29,7 +29,8 @@ export default async function contact(req, res) {
     });
   });
 
-  let responseMail = {
+  // Can't use it while the website is hosted on Vercel because of the Serverless Function Execution Timeout
+  /*   let responseMail = {
     from: `Célian DEBÉTHUNE <${process.env.GMAIL_EMAIL}>`,
     to: email,
     subject: `Message received`,
@@ -42,7 +43,7 @@ export default async function contact(req, res) {
       if (err) console.log(err);
       else console.log(info);
     });
-  });
+  }); */
 
   res.status(200);
   res.send();
