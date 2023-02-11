@@ -23,13 +23,13 @@ export default async function contact(req, res) {
   };
 
   await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, function (err, info) {
+    transporter.sendMail(mailData, (err, info) => {
       if (err) {
         console.log(err);
-        reject(error);
+        reject(err);
       } else {
         console.log(info);
-        resolve(success);
+        resolve(info);
       }
     });
   });
@@ -43,13 +43,13 @@ export default async function contact(req, res) {
   };
 
   await new Promise((resolve, reject) => {
-    transporter.sendMail(responseMail, function (err, info) {
+    transporter.sendMail(responseMail, (err, info) => {
       if (err) {
         console.log(err);
-        reject(error);
+        reject(err);
       } else {
         console.log(info);
-        resolve(success);
+        resolve(info);
       }
     });
   });
