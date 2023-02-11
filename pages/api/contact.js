@@ -18,8 +18,7 @@ export default async function contact(req, res) {
     replyTo: `${name} <${email}>`,
     to: process.env.GMAIL_EMAIL,
     subject: `[Portfolio] Message From ${name}`,
-    text: `${message}\n Message sent from message form on the portfolio by ${name}: ${email}`,
-    html: `<div>${message}</div><p>Message sent from message form on the portfolio by ${name}: ${email}</p>`,
+    text: `${message}\n\n Message sent from message form on the portfolio by ${name}: ${email}`,
   };
 
   await new Promise((resolve, reject) => {
