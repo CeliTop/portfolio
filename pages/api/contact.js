@@ -1,4 +1,4 @@
-export default function contact(req, res) {
+export default async function contact(req, res) {
   const { name, email, message } = req.body;
 
   let nodemailer = require("nodemailer");
@@ -22,9 +22,11 @@ export default function contact(req, res) {
     html: `<div>${message}</div><p>Message sent from message form on the portfolio by ${name}: ${email}</p>`,
   };
 
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, function (err, info) {
+      if (err) console.log(err);
+      else console.log(info);
+    });
   });
 
   let responseMail = {
@@ -35,9 +37,11 @@ export default function contact(req, res) {
     html: `<p>Your message sent from my portfolio has been received, I will process it as soon as possible.</p><p>This message was sent automatically.</p>`,
   };
 
-  transporter.sendMail(responseMail, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(responseMail, function (err, info) {
+      if (err) console.log(err);
+      else console.log(info);
+    });
   });
 
   res.status(200);
