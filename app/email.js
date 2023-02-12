@@ -10,9 +10,11 @@ export default function Email() {
   const [message, setMessage] = useState(null);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   function onChange(e) {
     setSubmitted(false);
+    setError(false);
     const id = e.target.id;
     const text = e.target.value;
     console.log(text);
@@ -46,6 +48,10 @@ export default function Email() {
       if (res.status === 200) {
         setLoading(false);
         setSubmitted(true);
+      } else if (res.status === 400) {
+        setLoading(false);
+        setSubmitted(false);
+        setError(true);
       }
     });
   }
@@ -85,9 +91,19 @@ export default function Email() {
           ) : null}
         </div>
         <input
-          className={submitted ? styles.submitted : ""}
+          className={
+            submitted ? styles.submitted : error ? styles.errorButton : ""
+          }
           type="submit"
-          value={submitted ? "Sent !" : loading ? "Loading..." : "Submit"}
+          value={
+            submitted
+              ? "Sent ! An automatic email has been sent to you."
+              : loading
+              ? "Loading..."
+              : error
+              ? "Error !"
+              : "Submit"
+          }
           onClick={onSubmit}
           disabled={
             name == "" ||

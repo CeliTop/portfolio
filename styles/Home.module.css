@@ -190,6 +190,12 @@ input[type="submit"].submitted {
   color: white;
 }
 
+input[type="submit"].errorButton {
+  background-color: red;
+  border-color: var(--secondary-background);
+  color: white;
+}
+
 .bottom {
   position: relative;
   color: var(--secondary);

@@ -1,5 +1,6 @@
 export default async function contact(req, res) {
   const { name, email, message } = req.body;
+  console.log(req.body);
 
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
@@ -21,17 +22,23 @@ export default async function contact(req, res) {
     text: `${message}\n\n Message sent from message form on the portfolio by ${name}: ${email}`,
   };
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, (err, info) => {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        console.log(info);
-        resolve(info);
-      }
+  try {
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+          console.log(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
     });
-  });
+  } catch (e) {
+    res.status(400);
+    res.send();
+    return;
+  }
 
   let responseMail = {
     from: `Célian DEBÉTHUNE <${process.env.GMAIL_EMAIL}>`,
@@ -41,17 +48,23 @@ export default async function contact(req, res) {
     html: `<p>Your message sent from my portfolio has been received, I will process it as soon as possible.</p><p>This message was sent automatically.</p>`,
   };
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(responseMail, (err, info) => {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        console.log(info);
-        resolve(info);
-      }
+  try {
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(responseMail, (err, info) => {
+        if (err) {
+          console.log(err);
+          reject(err);
+        } else {
+          console.log(info);
+          resolve(info);
+        }
+      });
     });
-  });
+  } catch (e) {
+    res.status(400);
+    res.send();
+    return;
+  }
 
   res.status(200);
   res.send();
