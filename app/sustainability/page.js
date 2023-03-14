@@ -6,7 +6,8 @@ import Card from "../../components/card";
 import YoutubePlayer from "../../components/youtubePlayer";
 import CardList from "../../components/cardList";
 import Image from "next/image";
-import freskResult from "/public/images/sustainability/freskResult.jpg";
+import climateFreskResult from "/public/images/sustainability/climateFreskResult.jpg";
+import diversityFreskResult from "/public/images/sustainability/diversityFreskResult.jpg";
 import project from "/public/images/sustainability/project.png";
 
 export default function Sustainability() {
@@ -28,34 +29,42 @@ export default function Sustainability() {
         <Card className={styles.freskResult}>
           <Image
             className={styles.freskImage}
-            src={freskResult}
+            src={climateFreskResult}
             alt="The climate fresk result"
           />
-
-          <div className={styles.freskDesc}>
-            <div>
-              <h2 className={styles.learnTitle}>What did I learn ?</h2>
+          <div className={styles.freskRight}>
+            <div className={styles.freskDesc}>
+              <div>
+                <h2 className={styles.learnTitle}>What did I learn ?</h2>
+              </div>
+              <p>
+                During these activities, I collaborated with other students with
+                other points of view, the discussions were interesting and I
+                learned a lot.
+              </p>
+              <p>
+                I learned new concepts related to climates such as radioactive
+                forcing or energy balance. I was also able to put words on known
+                or new concepts.
+              </p>
+              <p>
+                In addition, I now have a better vision of all the links between
+                climatic factors and what to do to limit the consequences of
+                human activity, as well as how to be fairer and avoid being
+                trapped by cognitive biases.
+              </p>
+              <p>
+                Finally, after the activities, we discussed with other groups
+                what action can be done now and what actions will ideally be
+                accepted in a utopia. {"We've"} found lots of little everyday
+                actions that anyone can do.
+              </p>
             </div>
-            <p>
-              During this activity, I have collaborated with other students with
-              other points of view, the discussions were interesting and I
-              learned a lot of things.
-            </p>
-            <p>
-              I learned new concepts related to climates such as radioactive
-              forcing or energy budget.
-            </p>
-            <p>
-              Moreover, I now have a better view of all links between climate
-              factors and what to do to limit the consequences of human
-              activity.
-            </p>
-            <p>
-              Finally, after the activity, we discussed with other groups about
-              the action that can be done right now and actions that ideally
-              will be accepted in a utopia. We found a lot of little actions of
-              every day that everyone can do.
-            </p>
+            <Image
+              className={styles.diversityFreskImage}
+              src={diversityFreskResult}
+              alt="The climate fresk result"
+            />
           </div>
         </Card>
       </div>
@@ -88,6 +97,12 @@ const actions = [
     description:
       "The Climate Fresk is an association that offers the possibility to schools and companies to do a collaborative activity. During this activity, you have to place cards on a fresk, in a causes-consequences order, around climate factors.",
     imagePath: "/images/sustainability/climateFresk.png",
+  },
+  {
+    title: "The Diversity Fresk",
+    description:
+      "Similar to The Climate Fresk it is a collaborative activity. It's the same principle of cards to be placed in a logical order, but on the theme of diversity, cognitive biases, how our brains work and what that entails.",
+    imagePath: "/images/sustainability/diversityFresk.png",
   },
   {
     title: "French level",

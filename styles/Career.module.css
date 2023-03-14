@@ -32,6 +32,7 @@
 .interview {
   margin: auto;
   text-align: justify;
+  max-width: 1500px;
 }
 
 .interview .text {
@@ -61,6 +62,17 @@
 
 .thanks {
   grid-column: 3;
+}
+
+.leadershipSection {
+  margin: 4rem auto 0 auto;
+  width: 90%;
+  max-width: 1500px;
+}
+
+.leadershipTitle {
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .internship {
@@ -113,7 +125,6 @@
   .interview {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1500px;
   }
 
   .interview .text {

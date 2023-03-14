@@ -15,6 +15,7 @@
   max-width: 70rem;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 2rem;
 }
 
@@ -24,13 +25,17 @@
   height: auto;
 }
 
-.freskDesc {
-  flex: 1;
+.freskRight {
+  max-width: 30rem;
 }
 
-.freskDesc > * {
-  max-width: 30rem;
-  margin: auto;
+.diversityFreskImage {
+  width: 100%;
+  height: auto;
+}
+
+.freskDesc {
+  margin-bottom: 2rem;
 }
 
 .projectContent {

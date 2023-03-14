@@ -23,11 +23,11 @@ export default function Career() {
       <main>
         <div className={styles.interviewSection}>
           <div className={styles.interviewTop}>
-            <h2 className={styles.interviewTitle}>Job Interview</h2>
+            <h2 className={styles.interviewTitle}>Job Interviews</h2>
             <p className={styles.interviewSubtitle}>
               In order to better understand the professional world and better
               understand the areas that interest me, I conducted an interview
-              with a professional.
+              with professionals.
             </p>
           </div>
           <Card dark className={styles.interview}>
@@ -39,6 +39,14 @@ export default function Career() {
             />
             <Thanks />
           </Card>
+          <div className={styles.leadershipSection}>
+            <h2 className={styles.leadershipTitle}>Leadership</h2>
+            <p className={styles.leadershipDescription}>
+              {
+                "In connection with the 'leadership' courses taught at school, I interviewed a person who had responsibilities and had to take care of a team. It was very interesting. I learned about his style of leadership, which is rather relaxed and encouraging to his colleagues, and then he explained to me why other styles can be appropriate for other people. He also taught me that you are not necessarily a leader from birth but that with hard work and confidence it is possible to progress. He also told me about the tools that are used to distribute tasks on projects (Trello for example), which allows him to better evaluate the performance of his team and to identify problems quickly before they become a problem."
+              }
+            </p>
+          </div>
         </div>
         <div className={styles.internship}>
           <div className={utils.sectionTop}>
