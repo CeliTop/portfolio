@@ -19,7 +19,7 @@ export default function Mobility() {
           </p>
         </div>
         <Card className={styles.semester}>
-          <div>
+          <div className={styles.semesterLeft}>
             <Image
               className={styles.image}
               src={stavangerImage}
@@ -27,16 +27,23 @@ export default function Mobility() {
               priority
             />
           </div>
-          <div>
+          <div className={styles.semesterRight}>
             <h2 className={styles.semesterTitle}>Semester Abroad</h2>
-
-            <p className={styles.semesterDesc}>
-              From August to December 2022, I spent a semester in Norway, at the
-              University of Stavanger, one of the largest Norwegian
-              universities, in a superb city. I took advantage of this period to
-              discover new working methods, new cultures, to exchange, and to
-              walk around this region of the world.
-            </p>
+            <div className={styles.semesterDesc}>
+              <p>
+                From August to December 2022, I spent a semester in Norway, at
+                the University of Stavanger, one of the largest Norwegian
+                universities, in a superb city. I took advantage of this period
+                to discover new working methods, new cultures, to exchange, and
+                to walk around this region of the world.
+              </p>
+              <p>The courses I took there are:</p>
+              <ul className={styles.list}>
+                <li>Probability and Advanced Statistics</li>
+                <li>Statistical Learning</li>
+                <li>Text Mining</li>
+              </ul>
+            </div>
           </div>
         </Card>
       </div>

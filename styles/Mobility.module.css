@@ -1,17 +1,26 @@
 .semester {
   display: flex;
   align-items: center;
+  gap: 3rem;
   margin: 2rem 10%;
 }
 
-.semester :first-child {
+.semesterLeft {
   flex: 2;
 }
 
-.semester :nth-child(2) {
+.semesterRight {
   flex: 1;
   width: 80%;
   margin: auto;
+}
+
+.list {
+  list-style: disc;
+}
+
+.list > * {
+  margin-left: 1rem;
 }
 
 .image {
@@ -52,11 +61,11 @@
     margin: 2rem 5%;
   }
 
-  .semester :first-child {
+  .semesterLeft {
     margin-bottom: 1rem;
   }
 
-  .semester :nth-child(2) {
+  .semesterRight {
     width: 95%;
   }
 
