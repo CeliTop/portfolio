@@ -75,6 +75,36 @@
   margin-bottom: 1rem;
 }
 
+.leadershipDescription {
+  font-size: 1.25rem;
+}
+
+.questions {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.questionDiv {
+  background-color: var(--primary-background);
+  color: var(--primary);
+  border-radius: 7px;
+  padding: 2rem;
+  transition: all 0.2s;
+}
+
+.questionDiv:hover {
+  transform: scale(1.04);
+  box-shadow: 0 5px 15px rgb(23, 18, 36), 0 2px 2px black;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
 .internship {
   margin: 4rem 0;
 }
@@ -108,6 +138,10 @@
 
   .interview .text {
     width: 90%;
+  }
+
+  .questions {
+    grid-template-columns: 1fr;
   }
 }
 

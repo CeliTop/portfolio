@@ -39,14 +39,7 @@ export default function Career() {
             />
             <Thanks />
           </Card>
-          <div className={styles.leadershipSection}>
-            <h2 className={styles.leadershipTitle}>Leadership</h2>
-            <p className={styles.leadershipDescription}>
-              {
-                "In connection with the 'leadership' courses taught at school, I interviewed a person who had responsibilities and had to take care of a team. It was very interesting. I learned about his style of leadership, which is rather relaxed and encouraging to his colleagues, and then he explained to me why other styles can be appropriate for other people. He also taught me that you are not necessarily a leader from birth but that with hard work and confidence it is possible to progress. He also told me about the tools that are used to distribute tasks on projects (Trello for example), which allows him to better evaluate the performance of his team and to identify problems quickly before they become a problem."
-              }
-            </p>
-          </div>
+          <LeadershipSection />
         </div>
         <div className={styles.internship}>
           <div className={utils.sectionTop}>
@@ -122,3 +115,76 @@ function Thanks() {
     </div>
   );
 }
+
+function LeadershipSection() {
+  return (
+    <div className={styles.leadershipSection}>
+      <h2 className={styles.leadershipTitle}>Leadership</h2>
+      <p className={styles.leadershipDescription}>
+        {
+          "In connection with the 'leadership' courses taught at school, I interviewed a person who had responsibilities and had to take care of a team. It was very interesting. I learned about his style of leadership, which is rather relaxed and encouraging to his colleagues, and then he explained to me why other styles can be appropriate for other people. He also taught me that you are not necessarily a leader from birth but that with hard work and confidence it is possible to progress. He also told me about the tools that are used to distribute tasks on projects (Trello for example), which allows him to better evaluate the performance of his team and to identify problems quickly before they become a problem."
+        }
+      </p>
+      <div className={styles.questions}>
+        {questions.map((question, id) => (
+          <div key={id} className={styles.questionDiv}>
+            <p className={styles.question}>{question.question}</p>
+            <p className={styles.questionAnswer}>{question.answer}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const questions = [
+  {
+    question:
+      "What are the responsibilities of a team leader towards their team and their superiors?",
+    answer:
+      "A team leader's primary responsibility is to support and motivate team members to improve their performance. They also need to communicate regularly with their superiors, providing updates on the team's progress.",
+  },
+  {
+    question: "How do you address non-performance issues within your team?",
+    answer:
+      "I acknowledge the issue and work with the team to identify the cause of non-performance, suggest ways to improve and provide feedback to team members who are not meeting expectations.",
+  },
+  {
+    question: "How do you manage conflicts within your team?",
+    answer:
+      "Conflicts is not a frequent issue in my team. When conflicts arise, I encourage team members to communicate with each other and express their viewpoints. I then ask them to suggest commitments to prevent similar issues in the future.",
+  },
+  {
+    question:
+      "Can you describe your leadership style and approach to leading a team?",
+    answer:
+      "I am clear with my team, we talk a lot, so that everyone knows what to do, why to do it.",
+  },
+  {
+    question:
+      "What performance metrics do you use to measure your team's success?",
+    answer:
+      "For each project the methods change. We use known methods such as agile methods for example.",
+  },
+  {
+    question: "How do you define success within a team?",
+    answer:
+      "A successful team is one where members willingly offer assistance to each other and work collaboratively, even beyond their assigned duties.",
+  },
+  {
+    question: "What mistakes have you made as a team leader?",
+    answer:
+      "I initially micromanaged team members' work and was overly demanding, undervaluing the importance of recognizing and rewarding effective work.",
+  },
+  {
+    question: "What do you find the most difficult?",
+    answer:
+      "One difficult thing is to manage team members who don't work as a team. It is difficult to communicate with them and to make them exchange with other members.",
+  },
+  {
+    question:
+      "What advice would you give to someone who aspires to be a team leader?",
+    answer:
+      "Listening to the team so that everyone feels concerned and useful to the projects, and to be more responsive when problems arise.",
+  },
+];
